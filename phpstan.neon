@@ -1,0 +1,10 @@
+includes:
+    - vendor/nunomaduro/larastan/extension.neon
+    - vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
+    - vendor/thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
+parameters:
+    excludes_analyse:
+        - app/Http/Middleware/RedirectIfAuthenticated.php
+        - app/Http/Controllers/Auth/RegisterController.php
+    ignoreErrors:
+
